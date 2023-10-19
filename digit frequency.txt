@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num[10]={'0','1','2','3','4','5','6','7','8','9'}; //number array to find frequency
+    char s[1000]; //input character array
+    scanf("%s",s);   //getting value of array
+    for(int i=0;i<10;i++) //to check the frequency of each number
+    {
+        int nu=0; // to store the frequency
+        for(int j=0;s[j]!='\0';j++) // iterate character array to find the freq.
+        if(s[j]==num[i]) //condition to check whether the character and the number are same
+        {
+            nu++; // if the condition is true the value the freq will inc by 1
+        }
+        printf("%d ",nu); // at last printing the frequency for each numbers
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
